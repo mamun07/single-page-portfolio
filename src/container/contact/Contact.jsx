@@ -16,7 +16,7 @@ const Contact = () => {
       >
         <Container maxWidth="xxl">
           <Grid container spacing={3} display="flex" justifyContent={'center'}>
-            <Grid item xs={6}>
+            <Grid item xs={12} md={6}>
               <Box
                 bgcolor="secondary.contrastText"
                 borderRadius={2}
@@ -42,7 +42,7 @@ const Contact = () => {
           <Grid container spacing={0} display="flex" justifyContent={'center'}>
             <Grid item xs={8}>
               <Grid container spacing={3}>
-                <Grid item xs={3}>
+                <Grid item xs={12} md={6} lg={3}>
                   <Box component="div" textAlign={'center'}>
                     <Typography variant="h2" color={'primary'}>
                       <CountUp start={0} end={153} duration={2.75} delay={2} />+
@@ -50,7 +50,7 @@ const Contact = () => {
                     <Typography variant="h4">Complete Project</Typography>
                   </Box>
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item xs={12} md={6} lg={3}>
                   <Box component="div" textAlign={'center'}>
                     <Typography variant="h2" color={'primary'}>
                       <CountUp start={0} end={5} duration={2.75} delay={2} />+
@@ -58,7 +58,7 @@ const Contact = () => {
                     <Typography variant="h4">In Processes</Typography>
                   </Box>
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item xs={12} md={6} lg={3}>
                   <Box component="div" textAlign={'center'}>
                     <Typography variant="h2" color={'primary'}>
                       <CountUp start={0} end={10} duration={2.75} delay={2} />+
@@ -66,7 +66,7 @@ const Contact = () => {
                     <Typography variant="h4">Get Awards</Typography>
                   </Box>
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item xs={12} md={6} lg={3}>
                   <Box component="div" textAlign={'center'}>
                     <Typography variant="h2" color={'primary'}>
                       <CountUp start={0} end={982} duration={2.75} delay={2} />+
