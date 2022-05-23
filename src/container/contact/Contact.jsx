@@ -44,7 +44,7 @@ const Contact = () => {
               <Grid container spacing={3}>
                 <Grid item xs={12} md={6} lg={3}>
                   <Box component="div" textAlign={'center'}>
-                    <Typography variant="h2" color={'primary'}>
+                    <Typography variant="h1" color={'primary'}>
                       <CountUp start={0} end={153} duration={2.75} delay={2} />+
                     </Typography>
                     <Typography variant="h4">Complete Project</Typography>
@@ -52,7 +52,7 @@ const Contact = () => {
                 </Grid>
                 <Grid item xs={12} md={6} lg={3}>
                   <Box component="div" textAlign={'center'}>
-                    <Typography variant="h2" color={'primary'}>
+                    <Typography variant="h1" color={'primary'}>
                       <CountUp start={0} end={5} duration={2.75} delay={2} />+
                     </Typography>
                     <Typography variant="h4">In Processes</Typography>
@@ -60,7 +60,7 @@ const Contact = () => {
                 </Grid>
                 <Grid item xs={12} md={6} lg={3}>
                   <Box component="div" textAlign={'center'}>
-                    <Typography variant="h2" color={'primary'}>
+                    <Typography variant="h1" color={'primary'}>
                       <CountUp start={0} end={10} duration={2.75} delay={2} />+
                     </Typography>
                     <Typography variant="h4">Get Awards</Typography>
@@ -68,7 +68,7 @@ const Contact = () => {
                 </Grid>
                 <Grid item xs={12} md={6} lg={3}>
                   <Box component="div" textAlign={'center'}>
-                    <Typography variant="h2" color={'primary'}>
+                    <Typography variant="h1" color={'primary'}>
                       <CountUp start={0} end={982} duration={2.75} delay={2} />+
                     </Typography>
                     <Typography variant="h4">Happy Clients</Typography>

@@ -3,16 +3,17 @@ import { Card, CardContent, Typography } from '@mui/material';
 const InfoCard = ({ title, des }) => {
   return (
     <Card
+      className="cardbg"
       sx={{
         bgcolor: 'secondary.contrastText',
         color: 'secondary.main',
-        boxShadow: 'none',
         transition: '0.3s',
-        p: 5,
+        p: '50px 20px',
+        boxShadow: '0px 1px 20px -5px #0000004f',
       }}
     >
       <CardContent>
-        <Typography variant="h1" component="h1" mb={3}>
+        <Typography variant="h2" component="h2" mb={3}>
           {title}
         </Typography>
         <Typography variant="p" component="p">

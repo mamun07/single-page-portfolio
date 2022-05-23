@@ -24,7 +24,7 @@ const Header = () => {
         <Grid spacing={3} container>
           <Grid
             item
-            lg={1}
+            lg={1.5}
             sm={2}
             xs={4}
             display={'flex'}
@@ -35,7 +35,7 @@ const Header = () => {
               <CardMedia alt="Header logo" component="img" image="/logo.svg" />
             </Typography>
           </Grid>
-          <Grid item sm={10} lg={11} xs={8}>
+          <Grid item sm={10} lg={10.5} xs={8}>
             <Box
               display={'flex'}
               alignItems={'center'}

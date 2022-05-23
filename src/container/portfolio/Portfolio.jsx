@@ -1,6 +1,8 @@
 import React from 'react';
-import { Box, Container, Typography } from '@mui/material';
+import { Box, Container } from '@mui/material';
 import { SectionTitle } from '../../components/SectionTitle';
+
+import CustomMesonary from '../../components/CustomMesonary';
 
 const Portfolio = () => {
   return (
@@ -14,9 +16,7 @@ const Portfolio = () => {
         <SectionTitle title="Latest Work" subtitle="Portfolio" />
       </Container>
       <Container maxWidth="xl">
-        <Typography variant="h2" textAlign={'center'}>
-          Portfolio Area
-        </Typography>
+        <CustomMesonary />
       </Container>
     </Box>
   );

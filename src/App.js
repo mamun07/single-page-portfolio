@@ -3,6 +3,9 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { CssBaseline, ThemeProvider } from '@mui/material';
 
 import { ToastContainer } from 'react-toastify';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import 'swiper/css';
 
 import theme from './theme/theme';
 import Home from './pages/Home';
