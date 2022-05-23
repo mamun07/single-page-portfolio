@@ -10,10 +10,10 @@ const Portfolio = () => {
       py={12}
       bgcolor={'secondary.contrastText'}
     >
-      <Container maxWidth="xxl">
+      <Container maxWidth="xl">
         <SectionTitle title="Latest Work" subtitle="Portfolio" />
       </Container>
-      <Container maxWidth="xxl">
+      <Container maxWidth="xl">
         <Typography variant="h2" textAlign={'center'}>
           Portfolio Area
         </Typography>

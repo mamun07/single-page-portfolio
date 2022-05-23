@@ -1,16 +1,6 @@
 import { createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
-  breakpoints: {
-    values: {
-      xs: 0,
-      sm: 600,
-      md: 900,
-      lg: 1200,
-      xl: 1500,
-      xxl: 1800,
-    },
-  },
   typography: {
     h1: {
       fontSize: '90px',

@@ -7,9 +7,6 @@ import {
   IconButton,
   Typography,
 } from '@mui/material';
-import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
-import EmailIcon from '@mui/icons-material/Email';
-import MapIcon from '@mui/icons-material/Map';
 
 const Header = () => {
   return (
@@ -23,7 +20,7 @@ const Header = () => {
       bgcolor={'secondary.contrastText'}
       zIndex={1}
     >
-      <Container maxWidth="xxl">
+      <Container maxWidth="xl">
         <Grid spacing={3} container>
           <Grid
             item
@@ -60,7 +57,7 @@ const Header = () => {
                     borderColor: 'primary.contrastText',
                   }}
                 >
-                  <MapIcon />
+                  <i className="las la-map-marked"></i>
                 </IconButton>
                 <Typography variant="p" component="p" ml={2}>
                   Navana D.H. Tower, 6 Panthapath,
@@ -87,7 +84,7 @@ const Header = () => {
                       borderColor: 'primary.contrastText',
                     }}
                   >
-                    <EmailIcon />
+                    <i className="las la-envelope"></i>
                   </IconButton>
                 </Typography>
                 <Typography variant="p" component="p" ml={2}>
@@ -110,7 +107,7 @@ const Header = () => {
                       borderColor: 'primary.contrastText',
                     }}
                   >
-                    <LocalPhoneIcon />
+                    <i className="las la-phone"></i>
                   </IconButton>
                 </Typography>
                 <Typography variant="p" component="p" ml={2}>

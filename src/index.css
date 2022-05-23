@@ -7,3 +7,6 @@
   font-weight: 300;
   scroll-behavior: smooth;
 }
+a {
+  text-decoration: none;
+}

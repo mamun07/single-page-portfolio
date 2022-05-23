@@ -10,10 +10,10 @@ const GetInTouch = () => {
       py={12}
       bgcolor={'secondary.contrastText'}
     >
-      <Container maxWidth="xxl">
+      <Container maxWidth="xl">
         <SectionTitle subtitle="Get In Touch" />
       </Container>
-      <Container maxWidth="xxl">
+      <Container maxWidth="xl">
         <Typography variant="h2" textAlign={'center'}>
           GetInTouch Email
         </Typography>

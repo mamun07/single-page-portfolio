@@ -14,7 +14,7 @@ const Contact = () => {
         bgcolor={'primary.main'}
         mb={-20}
       >
-        <Container maxWidth="xxl">
+        <Container maxWidth="xl">
           <Grid container spacing={3} display="flex" justifyContent={'center'}>
             <Grid item xs={12} md={6}>
               <Box

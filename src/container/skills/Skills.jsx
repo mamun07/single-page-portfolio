@@ -5,10 +5,10 @@ import { SectionTitle } from '../../components/SectionTitle';
 const Skills = () => {
   return (
     <Box component="div" id="skills" py={12}>
-      <Container maxWidth="xxl">
+      <Container maxWidth="xl">
         <SectionTitle title="About Me" subtitle="My Skills" />
       </Container>
-      <Container maxWidth="xxl">
+      <Container maxWidth="xl">
         <Grid container spacing={0} display="flex" justifyContent={'center'}>
           <Grid item xs={12} md={9}>
             <Grid container spacing={6}>
@@ -16,7 +16,7 @@ const Skills = () => {
                 <CardMedia
                   alt="Header logo"
                   component="img"
-                  image="/about.jpg"
+                  image="/about.svg"
                 />
               </Grid>
               <Grid item xs={12} md={6}>

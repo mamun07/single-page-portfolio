@@ -12,10 +12,10 @@ import { SectionTitle } from '../../components/SectionTitle';
 const Intro = () => {
   return (
     <Box component="div" id="intro" py={12} bgcolor={'secondary.light'}>
-      <Container maxWidth="xxl">
+      <Container maxWidth="xl">
         <SectionTitle title="What I Do" subtitle="Service" />
       </Container>
-      <Container maxWidth="xxl">
+      <Container maxWidth="xl">
         <Grid container spacing={3} display="flex" justifyContent="center">
           <Grid item xs={12} sm={6} md={3}>
             <Card
