@@ -24,7 +24,7 @@ const Intro = () => {
         'Lorem ipsum dolor sit amet consectetur adipisicing elit molestias quod reprehenderit',
     },
     {
-      title: 'MongoDB Developer',
+      title: 'Shopify Developer',
       descriptions:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit molestias quod reprehenderit',
     },
@@ -47,7 +47,7 @@ const Intro = () => {
               }}
               navigation={false}
               modules={[Pagination]}
-              style={{ padding: '80px 15px' }}
+              style={{ padding: '10px 15px 80px 15px' }}
             >
               {cartinfo.map((card, i) => {
                 return (

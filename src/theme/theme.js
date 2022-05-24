@@ -4,7 +4,7 @@ const theme = createTheme({
   typography: {
     h1: {
       fontSize: '90px',
-      lineHeight: '100px',
+      lineHeight: '90px',
       fontWeight: 400,
       margin: '0 0 1rem 0',
       color: 'rgba(0, 0, 0, 0.7)',

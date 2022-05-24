@@ -97,25 +97,25 @@ export default function CustomTab() {
           ipsam id impedit.
         </Typography>
         <Box component="div">
-          <Typography variant="p"> React.js</Typography>
+          <Typography variant="p"> React.js </Typography>
           <LinearProgress
             variant="determinate"
             value={90}
             sx={{ height: 10, mb: 2 }}
           />
-          <Typography variant="p"> Node.js</Typography>
+          <Typography variant="p"> Node.js </Typography>
           <LinearProgress
             variant="determinate"
             value={80}
             sx={{ height: 10, mb: 2 }}
           />
-          <Typography variant="p"> Express.js</Typography>
+          <Typography variant="p"> Express</Typography>
           <LinearProgress
             variant="determinate"
             value={95}
             sx={{ height: 10, mb: 2 }}
           />
-          <Typography variant="p"> MongoDB</Typography>
+          <Typography variant="p"> MongoDB </Typography>
           <LinearProgress
             variant="determinate"
             value={70}

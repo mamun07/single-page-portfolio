@@ -9,3 +9,10 @@
 a {
   text-decoration: none;
 }
+.swiper-slide-active .cardbg {
+  background: #e04d01;
+}
+.swiper-slide-active .cardbg .textcolor h2,
+.swiper-slide-active .cardbg .textcolor p {
+  color: #fff;
+}

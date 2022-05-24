@@ -18,7 +18,7 @@ const Header = () => {
       borderBottom={'1px solid'}
       borderColor={'primary.contrastText'}
       bgcolor={'secondary.contrastText'}
-      zIndex={1}
+      zIndex={2}
     >
       <Container maxWidth="xl">
         <Grid spacing={3} container>
