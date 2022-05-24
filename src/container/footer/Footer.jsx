@@ -3,7 +3,7 @@ import { Box, Container, Typography } from '@mui/material';
 
 const Footer = () => {
   return (
-    <Box component="div" py={5}>
+    <Box component="div" py={5} bgcolor="secondary.main">
       <Container maxWidth="xl">
         <Box
           component="div"
@@ -11,10 +11,20 @@ const Footer = () => {
           alignItems="center"
           justifyContent="space-between"
         >
-          <Typography variant="h4" component="h4" m={0}>
-            NOTO
+          <Typography
+            variant="h4"
+            component="h4"
+            m={0}
+            color="secondary.contrastText"
+          >
+            Mamun
           </Typography>
-          <Typography variant="p" component="p" m={0}>
+          <Typography
+            variant="p"
+            component="p"
+            m={0}
+            color="secondary.contrastText"
+          >
             &copy; 2022 Md. Al-Mamun. All Rights Reserved.
           </Typography>
         </Box>

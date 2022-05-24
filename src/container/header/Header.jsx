@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  Box,
-  CardMedia,
-  Container,
-  Grid,
-  IconButton,
-  Typography,
-} from '@mui/material';
+import { Box, Container, Grid, IconButton, Typography } from '@mui/material';
 
 const Header = () => {
   return (
@@ -21,21 +14,36 @@ const Header = () => {
       zIndex={2}
     >
       <Container maxWidth="xl">
-        <Grid spacing={3} container>
-          <Grid
-            item
-            lg={1.5}
-            sm={2}
-            xs={4}
-            display={'flex'}
-            alignItems={'center'}
-            justifyContent={'flex-start'}
-          >
-            <Typography variant="a" component={'a'} href="/">
-              <CardMedia alt="Header logo" component="img" image="/logo.svg" />
+        <Grid
+          spacing={3}
+          container
+          display={'flex'}
+          alignItems={'center'}
+          justifyContent={'flex-start'}
+        >
+          <Grid item lg={2} sm={2} xs={4}>
+            <Typography variant="a" component="a" href="#banner">
+              <Typography
+                variant="h2"
+                component="h2"
+                fontWeight={900}
+                color="primary.main"
+                m={0}
+              >
+                Mamun
+              </Typography>
+              <Typography
+                variant="p"
+                component="p"
+                fontWeight={900}
+                color="primary.main"
+                m={0}
+              >
+                Full Stack Developer
+              </Typography>
             </Typography>
           </Grid>
-          <Grid item sm={10} lg={10.5} xs={8}>
+          <Grid item sm={10} lg={10} xs={8}>
             <Box
               display={'flex'}
               alignItems={'center'}

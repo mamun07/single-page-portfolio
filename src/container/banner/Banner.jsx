@@ -4,7 +4,7 @@ import Buttons from '../../components/Buttons';
 
 const Banner = () => {
   return (
-    <Box component="div" py={8}>
+    <Box component="div" py={8} id="banner">
       <Box
         component="div"
         sx={{
@@ -23,7 +23,11 @@ const Banner = () => {
                   HELLO
                 </Typography>
                 <Box component="div" mb={4}>
-                  <Typography variant="h1" component="h1" fontWeight={'900'}>
+                  <Typography
+                    variant="h1"
+                    component="h1"
+                    sx={{ fontWeight: 900 }}
+                  >
                     I'm{' '}
                     <Box
                       component="span"
@@ -33,7 +37,11 @@ const Banner = () => {
                       Noto
                     </Box>
                   </Typography>
-                  <Typography variant="h1" component="h1">
+                  <Typography
+                    variant="h1"
+                    component="h1"
+                    sx={{ fontWeight: 900 }}
+                  >
                     MERN Developer
                   </Typography>
                 </Box>
