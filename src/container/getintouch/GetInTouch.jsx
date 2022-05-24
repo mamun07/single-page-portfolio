@@ -1,12 +1,18 @@
 import React from 'react';
-import { Avatar, Box, Container, Grid, Typography } from '@mui/material';
+import { Box, Container, Grid, IconButton, Typography } from '@mui/material';
 import { SectionTitle } from '../../components/SectionTitle';
 
 const GetInTouch = () => {
   return (
-    <Box component="div" id="portfolio" pt={23} pb={20}>
+    <Box
+      component="div"
+      id="portfolio"
+      pt={23}
+      pb={20}
+      bgcolor="secondary.light"
+    >
       <Container maxWidth="xl">
-        <Grid container spacing={3} display="flex" justifyContent="center">
+        <Grid container spacing={0} display="flex" justifyContent="center">
           <Grid
             item
             xs={12}
@@ -18,7 +24,7 @@ const GetInTouch = () => {
           >
             <Box component="div" py={5}>
               <SectionTitle subtitle="Get In Touch" />
-              <Typography variant="h2" component="h2">
+              <Typography variant="h4" mt={-3} mb={3}>
                 mamunben7@gmail.com
               </Typography>
               <Box
@@ -28,68 +34,31 @@ const GetInTouch = () => {
                 alignItems="center"
                 justifyContent="center"
               >
-                <Typography variant="a" component="a" href="/">
-                  <Avatar
-                    sx={{
-                      mr: 1,
-                      bgcolor: 'secondary.contrastText',
-                      color: 'primary.dark',
-                      boxShadow: '0px 1px 20px -3px #0000004f',
-                    }}
-                  >
-                    <i className="lab la-facebook-f"></i>
-                  </Avatar>
-                </Typography>
-                <Avatar
-                  sx={{
-                    mr: 1,
-                    bgcolor: 'secondary.contrastText',
-                    color: 'primary.dark',
-                    boxShadow: '0px 1px 20px -3px #0000004f',
-                  }}
-                >
-                  <i className="lab la-linkedin-in"></i>
-                </Avatar>
-                <Avatar
-                  sx={{
-                    mr: 1,
-                    bgcolor: 'secondary.contrastText',
-                    color: 'primary.dark',
-                    boxShadow: '0px 1px 20px -3px #0000004f',
-                  }}
-                >
-                  <i className="lab la-youtube"></i>
-                </Avatar>
-                <Avatar
-                  sx={{
-                    mr: 1,
-                    bgcolor: 'secondary.contrastText',
-                    color: 'primary.dark',
-                    boxShadow: '0px 1px 20px -3px #0000004f',
-                  }}
-                >
-                  <i className="lab la-twitter"></i>
-                </Avatar>
-                <Avatar
-                  sx={{
-                    mr: 1,
-                    bgcolor: 'secondary.contrastText',
-                    color: 'primary.dark',
-                    boxShadow: '0px 1px 20px -3px #0000004f',
-                  }}
-                >
-                  <i className="lab la-snapchat-ghost"></i>
-                </Avatar>
-                <Avatar
-                  sx={{
-                    mr: 1,
-                    bgcolor: 'secondary.contrastText',
-                    color: 'primary.dark',
-                    boxShadow: '0px 1px 20px -3px #0000004f',
-                  }}
-                >
-                  <i className="lab la-instagram"></i>
-                </Avatar>
+                {socialData.map((social) => {
+                  return (
+                    <Typography
+                      key={social.title}
+                      component={'a'}
+                      href={social.link}
+                    >
+                      <IconButton
+                        size="large"
+                        color="primary"
+                        sx={{
+                          boxShadow: '0px 1px 20px -3px #0000004f',
+                          mr: 1,
+                          transition: '0.3s',
+                          '&:hover': {
+                            bgcolor: 'primary.main',
+                            color: 'primary.contrastText',
+                          },
+                        }}
+                      >
+                        <i className={social.icon}></i>
+                      </IconButton>
+                    </Typography>
+                  );
+                })}
               </Box>
             </Box>
           </Grid>
@@ -100,3 +69,31 @@ const GetInTouch = () => {
 };
 
 export default GetInTouch;
+
+const socialData = [
+  {
+    title: 'facebook',
+    link: 'https://www.facebook.com/profile.php?id=100056767370124',
+    icon: 'lab la-facebook-f',
+  },
+  {
+    title: 'instagram',
+    link: '/',
+    icon: 'lab la-instagram',
+  },
+  {
+    title: 'twitter',
+    link: '/',
+    icon: 'lab la-twitter',
+  },
+  {
+    title: 'linkedin',
+    link: '/',
+    icon: 'lab la-linkedin',
+  },
+  {
+    title: 'stack overflow',
+    link: '/',
+    icon: 'lab la-stack-overflow',
+  },
+];

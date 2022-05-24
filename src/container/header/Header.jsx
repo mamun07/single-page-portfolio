@@ -22,21 +22,22 @@ const Header = () => {
           justifyContent={'flex-start'}
         >
           <Grid item lg={2} sm={2} xs={4}>
-            <Typography variant="a" component="a" href="#banner">
+            <Typography component="a" href="#banner">
               <Typography
-                variant="h2"
-                component="h2"
+                variant="h4"
                 fontWeight={900}
                 color="primary.main"
-                m={0}
+                mb={-1}
               >
                 Mamun
               </Typography>
               <Typography
-                variant="p"
+                variant="subtitle1"
                 component="p"
-                fontWeight={900}
+                fontWeight={500}
                 color="primary.main"
+                letterSpacing={1.3}
+                fontSize={10}
                 m={0}
               >
                 Full Stack Developer

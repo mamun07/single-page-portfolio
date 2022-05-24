@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
@@ -16,22 +16,23 @@ a {
 .swiper-slide-active .cardbg .textcolor p {
   color: #fff;
 }
-.line {
+.skillbg {
   position: relative;
 }
-.line::before {
+.skillbg::before {
   position: absolute;
   content: '';
   bottom: 0;
   right: 0;
-  width: 400px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
   background-image: url('/public/line.svg');
   background-repeat: no-repeat;
-  background-position: right;
-  background-size: 200px 200px;
+  background-position: center;
+  background-size: 203px 203px;
+  border-radius: 100%;
 }
-.line::after {
+.skillbg::after {
   position: absolute;
   content: '';
   bottom: -50px;
@@ -42,28 +43,4 @@ a {
   background-repeat: no-repeat;
   background-position: left;
   background-size: 200px 200px;
-}
-.dot {
-  position: relative;
-}
-.dot::before {
-  position: absolute;
-  content: '';
-  bottom: 0;
-  right: 0;
-  width: 300px;
-  height: 300px;
-  background-color: #00a30e;
-}
-.wev {
-  position: relative;
-}
-.wev::before {
-  position: absolute;
-  content: '';
-  bottom: 0;
-  right: 0;
-  width: 300px;
-  height: 300px;
-  background-color: #2201e0;
 }

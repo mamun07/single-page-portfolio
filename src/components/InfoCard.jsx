@@ -13,7 +13,13 @@ const InfoCard = ({ title, des }) => {
       }}
     >
       <CardContent className="textcolor">
-        <Typography variant="h2" component="h2" mb={3}>
+        <Typography
+          variant="subtitle1"
+          fontSize={40}
+          lineHeight="50px"
+          component="h2"
+          mb={3}
+        >
           {title}
         </Typography>
         <Typography variant="p" component="p">

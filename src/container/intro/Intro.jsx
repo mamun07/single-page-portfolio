@@ -9,22 +9,32 @@ import { Pagination } from 'swiper';
 const Intro = () => {
   const cartinfo = [
     {
-      title: 'ReactJS Developer',
+      title: 'React Frontend Development',
       descriptions:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit molestias quod reprehenderit',
     },
     {
-      title: 'NodeJS Developer',
+      title: 'Next Frontend Development',
       descriptions:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit molestias quod reprehenderit',
     },
     {
-      title: 'MongoDB Developer',
+      title: 'MERN Stack Development',
       descriptions:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit molestias quod reprehenderit',
     },
     {
-      title: 'Shopify Developer',
+      title: 'Shopify Liquid Development',
+      descriptions:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit molestias quod reprehenderit',
+    },
+    {
+      title: 'Landing Page Development',
+      descriptions:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit molestias quod reprehenderit',
+    },
+    {
+      title: 'React Customizition',
       descriptions:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit molestias quod reprehenderit',
     },

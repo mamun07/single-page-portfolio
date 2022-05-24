@@ -1,33 +1,22 @@
 import React from 'react';
-import { Box, Container, Typography } from '@mui/material';
+import { Box, Container, Grid, Typography } from '@mui/material';
 
 const Footer = () => {
   return (
-    <Box component="div" py={5} bgcolor="secondary.main">
+    <Box component="div" py={5} bgcolor="primary.dark">
       <Container maxWidth="xl">
-        <Box
-          component="div"
-          display="flex"
-          alignItems="center"
-          justifyContent="space-between"
-        >
-          <Typography
-            variant="h4"
-            component="h4"
-            m={0}
-            color="secondary.contrastText"
-          >
-            Mamun
-          </Typography>
-          <Typography
-            variant="p"
-            component="p"
-            m={0}
-            color="secondary.contrastText"
-          >
-            &copy; 2022 Md. Al-Mamun. All Rights Reserved.
-          </Typography>
-        </Box>
+        <Grid container spacing={0}>
+          <Grid item xs={12} md={6}>
+            <Typography variant="h4" m={0} color="secondary.main">
+              Mamun
+            </Typography>
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <Typography variant="p" component="p" m={0} color="secondary.main">
+              &copy; 2022 Md. Al-Mamun. All Rights Reserved.
+            </Typography>
+          </Grid>
+        </Grid>
       </Container>
     </Box>
   );

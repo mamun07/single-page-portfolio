@@ -13,6 +13,10 @@ const Buttons = ({ label, href, styled, mr }) => {
           minHeight: 60,
           textTransform: 'none',
           mr: `${mr}`,
+          '&:hover': {
+            bgcolor: 'primary.main',
+            color: 'primary.contrastText',
+          },
         }}
         href={href}
       >

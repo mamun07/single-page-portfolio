@@ -19,28 +19,27 @@ const Banner = () => {
           <Grid container spacing={0}>
             <Grid item xs={12} md={6}>
               <Box component="div">
-                <Typography variant="h3" component="h3" color="primary.main">
+                <Typography variant="h4" color="primary.main">
                   HELLO
                 </Typography>
                 <Box component="div" mb={4}>
                   <Typography
-                    variant="h1"
-                    component="h1"
-                    sx={{ fontWeight: 900 }}
+                    variant="subtitle1"
+                    fontSize={90}
+                    lineHeight="90px"
+                    fontWeight={900}
+                    m={0}
                   >
                     I'm{' '}
-                    <Box
-                      component="span"
-                      color="primary.main"
-                      fontWeight={'900'}
-                    >
+                    <Box component="span" color="primary.main">
                       Noto
                     </Box>
                   </Typography>
                   <Typography
-                    variant="h1"
-                    component="h1"
-                    sx={{ fontWeight: 900 }}
+                    variant="subtitle1"
+                    fontSize={90}
+                    lineHeight="90px"
+                    fontWeight={900}
                   >
                     MERN Developer
                   </Typography>

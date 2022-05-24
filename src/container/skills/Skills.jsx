@@ -6,7 +6,7 @@ import CustomTab from '../../components/CustomTab';
 const Skills = () => {
   return (
     <Box
-      className="line"
+      className="skillbg"
       component="div"
       id="skills"
       py={12}
