@@ -4,13 +4,7 @@ import { SectionTitle } from '../../components/SectionTitle';
 
 const GetInTouch = () => {
   return (
-    <Box
-      component="div"
-      id="portfolio"
-      pt={23}
-      pb={20}
-      bgcolor={'secondary.contrastText'}
-    >
+    <Box component="div" id="portfolio" pt={23} pb={20}>
       <Container maxWidth="xl">
         <Grid container spacing={3} display="flex" justifyContent="center">
           <Grid

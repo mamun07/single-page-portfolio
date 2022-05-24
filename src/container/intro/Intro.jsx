@@ -31,7 +31,7 @@ const Intro = () => {
   ];
 
   return (
-    <Box component="div" id="intro" py={12} bgcolor={'secondary.light'}>
+    <Box component="div" id="intro" py={12}>
       <Container maxWidth="xl">
         <SectionTitle title="What I Do" subtitle="Service" />
       </Container>
@@ -48,6 +48,7 @@ const Intro = () => {
               navigation={false}
               modules={[Pagination]}
               style={{ padding: '10px 15px 80px 15px' }}
+              className="line"
             >
               {cartinfo.map((card, i) => {
                 return (

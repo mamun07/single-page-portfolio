@@ -3,7 +3,7 @@ import { Box, Container, Typography } from '@mui/material';
 
 const Footer = () => {
   return (
-    <Box component="div" bgcolor={'primary.light'} py={5}>
+    <Box component="div" py={5}>
       <Container maxWidth="xl">
         <Box
           component="div"

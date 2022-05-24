@@ -7,13 +7,7 @@ import CountUp from 'react-countup';
 const Contact = () => {
   return (
     <>
-      <Box
-        component="div"
-        id="contact"
-        py={15}
-        bgcolor={'primary.main'}
-        mb={-20}
-      >
+      <Box component="div" id="contact" py={15} mb={-20}>
         <Container maxWidth="xl">
           <Grid container spacing={3} display="flex" justifyContent={'center'}>
             <Grid item xs={12} md={6}>

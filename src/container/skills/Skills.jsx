@@ -5,7 +5,7 @@ import CustomTab from '../../components/CustomTab';
 
 const Skills = () => {
   return (
-    <Box component="div" id="skills" py={12}>
+    <Box className="line" component="div" id="skills" py={12}>
       <Container maxWidth="xl">
         <SectionTitle title="About Me" subtitle="My Skills" />
       </Container>
