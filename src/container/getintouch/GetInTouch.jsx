@@ -6,7 +6,7 @@ const GetInTouch = () => {
   return (
     <Box
       component="div"
-      id="portfolio"
+      className="getintouch"
       pt={23}
       pb={20}
       bgcolor="secondary.light"

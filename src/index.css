@@ -16,6 +16,8 @@ a {
 .swiper-slide-active .cardbg .textcolor p {
   color: #fff;
 }
+.contactmainbg,
+.contactbg,
 .skillbg {
   position: relative;
 }
@@ -43,4 +45,29 @@ a {
   background-repeat: no-repeat;
   background-position: left;
   background-size: 200px 200px;
+}
+
+.contactbg::before {
+  position: absolute;
+  content: '';
+  top: 15px;
+  left: 15px;
+  width: 110%;
+  height: 110%;
+  background-image: url('/public/contactbg.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.contactmainbg::before {
+  position: absolute;
+  content: '';
+  top: 5%;
+  left: 1%;
+  width: 300px;
+  height: 300px;
+  background-image: url('/public/wev.svg');
+  background-repeat: no-repeat;
+  background-position: top;
 }

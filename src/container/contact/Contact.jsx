@@ -13,7 +13,7 @@ const Contact = () => {
         py={15}
         mb={-20}
         bgcolor={'primary.main'}
-        className="line"
+        className="contactmainbg"
       >
         <Container maxWidth="xl">
           <Grid
@@ -30,6 +30,7 @@ const Contact = () => {
                 textAlign="center"
                 py={8}
                 boxShadow={'0px 10px 40px 0px #0000004f'}
+                className="contactbg"
               >
                 <SectionTitle title="Hire me for your awesome project" />
                 <Button
