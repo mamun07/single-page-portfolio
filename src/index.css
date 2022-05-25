@@ -1,10 +1,10 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
 }
 a {
   text-decoration: none;
@@ -46,7 +46,6 @@ a {
   background-position: left;
   background-size: 200px 200px;
 }
-
 .contactbg::before {
   position: absolute;
   content: '';
@@ -59,7 +58,20 @@ a {
   background-position: center;
   background-size: cover;
 }
-
+@media (max-width: 500px) {
+  .contactbg::before {
+    position: absolute;
+    content: '';
+    top: 80px;
+    left: 15px;
+    width: 90%;
+    height: 90%;
+    background-image: url('/public/contactbg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+}
 .contactmainbg::before {
   position: absolute;
   content: '';

@@ -7,7 +7,7 @@ export const SectionTitle = ({ title, subtitle }) => {
       <Typography variant="subtitle1" fontSize={15} color="primary.main">
         {subtitle}
       </Typography>
-      <Typography variant="subtitle1" fontSize={40}>
+      <Typography variant="subtitle1" fontSize={{ xs: 30, lg: 40 }}>
         {title}
       </Typography>
     </Box>

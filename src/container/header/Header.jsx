@@ -21,7 +21,7 @@ const Header = () => {
           alignItems={'center'}
           justifyContent={'flex-start'}
         >
-          <Grid item lg={2} sm={2} xs={4}>
+          <Grid item lg={2} sm={4} xs={5}>
             <Typography component="a" href="#banner">
               <Typography
                 variant="h4"
@@ -44,7 +44,7 @@ const Header = () => {
               </Typography>
             </Typography>
           </Grid>
-          <Grid item sm={10} lg={10} xs={8}>
+          <Grid item sm={8} lg={10} xs={7}>
             <Box
               display={'flex'}
               alignItems={'center'}
@@ -55,7 +55,7 @@ const Header = () => {
                 variant="div"
                 component="div"
                 mx={2}
-                display={{ md: 'flex', xs: 'none' }}
+                display={{ lg: 'flex', xs: 'none' }}
                 alignItems={'center'}
               >
                 <IconButton

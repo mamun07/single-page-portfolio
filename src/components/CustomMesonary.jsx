@@ -4,7 +4,10 @@ import Masonry from '@mui/lab/Masonry';
 
 const CustomMesonary = () => {
   return (
-    <Masonry columns={4} spacing={2}>
+    <Masonry
+      columns={{ xs: 2, sm: 3, md: 4 }}
+      spacing={{ xs: 1, sm: 2, md: 3 }}
+    >
       {itemData.map((item, index) => (
         <Box component="div" key={index}>
           <CardMedia

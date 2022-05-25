@@ -9,8 +9,8 @@ const Buttons = ({ label, href, styled, mr }) => {
         sx={{
           fontSize: 18,
           lineHeight: '18px',
-          minWidth: 200,
-          minHeight: 60,
+          minWidth: 170,
+          minHeight: 55,
           textTransform: 'none',
           mr: `${mr}`,
           '&:hover': {

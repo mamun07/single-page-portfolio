@@ -52,19 +52,24 @@ const Contact = () => {
           </Grid>
         </Container>
       </Box>
-      <Box component="div" id="contact" pt={50} pb={20}>
+      <Box
+        component="div"
+        id="contact"
+        pt={{ xs: '300px', lg: '350px' }}
+        pb={{ xs: '100px', lg: '150px' }}
+      >
         <Container maxWidth="xxl">
           <Grid container spacing={0} display="flex" justifyContent={'center'}>
             <Grid item xs={12} lg={8}>
               <Grid container spacing={3}>
                 {projectsuccess.map((project, i) => {
                   return (
-                    <Grid item xs={12} md={6} lg={3} key={i}>
+                    <Grid item xs={6} sm={3} key={i}>
                       <Box component="div" textAlign={'center'}>
                         <Typography
                           variant="subtitle1"
                           color={'primary'}
-                          fontSize={80}
+                          fontSize={{ xs: 30, sm: 50, md: 60, lg: 80 }}
                           fontWeight={300}
                         >
                           <CountUp
@@ -75,7 +80,12 @@ const Contact = () => {
                           />
                           +
                         </Typography>
-                        <Typography variant="h6">{project.title}</Typography>
+                        <Typography
+                          variant="h6"
+                          fontSize={{ xs: 14, sm: 15, md: 20 }}
+                        >
+                          {project.title}
+                        </Typography>
                       </Box>
                     </Grid>
                   );

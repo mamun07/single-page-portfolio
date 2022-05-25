@@ -47,9 +47,22 @@ const Intro = () => {
       </Container>
       <Container maxWidth="xl">
         <Grid container spacing={0} display="flex" justifyContent="center">
-          <Grid item xs={10}>
+          <Grid item xs={12} lg={10}>
             <Swiper
-              slidesPerView={3}
+              breakpoints={{
+                640: {
+                  slidesPerView: 1,
+                  spaceBetween: 15,
+                },
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                },
+              }}
               spaceBetween={30}
               centeredSlides={false}
               pagination={{

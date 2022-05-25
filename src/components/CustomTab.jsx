@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { Box, Typography, Tab, Tabs, LinearProgress } from '@mui/material';
+import { Box, Typography, Tab, Tabs } from '@mui/material';
+import Buttons from '../components/Buttons';
+import SkillProgress from './SkillProgress';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -45,50 +47,49 @@ export default function CustomTab() {
           <Tab label="About Me" {...a11yProps(0)} />
           <Tab label="Education" {...a11yProps(1)} />
           <Tab label="Skills" {...a11yProps(2)} />
-          <Tab label="Exprience" {...a11yProps(3)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-        <Typography variant="h4" component="h4">
-          Hi I am Full Stack MERN Developer
+        <Typography variant="h6" component="h6" my={3}>
+          Hi, I am Full-Stack Developer
         </Typography>
         <Typography variant="p" component="p" mb={3}>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
-          maiores ea soluta consequuntur, pariatur itaque praesentium ipsum
-          ipsam id impedit.
+          maiores ea soluta consequuntur.
         </Typography>
         <Typography variant="p" component="p" mb={3}>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
           maiores ea soluta consequuntur, pariatur itaque praesentium ipsum
           ipsam id impedit. Lorem ipsum dolor sit, amet consectetur adipisicing
-          elit. Eaque maiores ea soluta consequuntur
+          elit.
         </Typography>
-        <Typography variant="p" component="p">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
-          maiores ea soluta consequuntur, pariatur itaque praesentium ipsum
-          ipsam id impedit. Lorem ipsum dolor sit, amet consectetur adipisicing
-          elit. Eaque maiores ea soluta consequuntur, pariatur itaque
-          praesentium ipsum ipsam id impedit.
-        </Typography>
+        <Box component="div" mt={10}>
+          <Buttons
+            label="Download CV"
+            href="https://global.caremebd.com/"
+            mr="20px"
+            styled="contained"
+          />
+          <Buttons label="Contact Me" href="#contact" styled="outlined" />
+        </Box>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <Typography variant="h4" component="h4">
+        <Typography variant="h6" component="h6" my={3}>
           Education
         </Typography>
         <Typography variant="p" component="p" mb={3}>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
-          maiores ea soluta consequuntur, pariatur itaque praesentium ipsum
-          ipsam id impedit.
+          maiores ea soluta consequuntur.
         </Typography>
         <Typography variant="p" component="p" mb={3}>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
           maiores ea soluta consequuntur, pariatur itaque praesentium ipsum
           ipsam id impedit. Lorem ipsum dolor sit, amet consectetur adipisicing
-          elit. Eaque maiores ea soluta consequuntur
+          elit.
         </Typography>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        <Typography variant="h4" component="h4">
+        <Typography variant="h6" component="h6" my={3}>
           I have a lot of skills
         </Typography>
         <Typography variant="p" component="p" mb={3}>
@@ -96,56 +97,33 @@ export default function CustomTab() {
           maiores ea soluta consequuntur, pariatur itaque praesentium ipsum
           ipsam id impedit.
         </Typography>
-        <Box component="div">
-          <Typography variant="p"> React.js </Typography>
-          <LinearProgress
-            variant="determinate"
-            value={90}
-            sx={{ height: 10, mb: 2 }}
-          />
-          <Typography variant="p"> Node.js </Typography>
-          <LinearProgress
-            variant="determinate"
-            value={80}
-            sx={{ height: 10, mb: 2 }}
-          />
-          <Typography variant="p"> Express</Typography>
-          <LinearProgress
-            variant="determinate"
-            value={95}
-            sx={{ height: 10, mb: 2 }}
-          />
-          <Typography variant="p"> MongoDB </Typography>
-          <LinearProgress
-            variant="determinate"
-            value={70}
-            sx={{ height: 10, mb: 2 }}
-          />
+        <Box component="div" mt={5}>
+          {skills.map((skill, i) => {
+            return (
+              <SkillProgress key={i} title={skill.title} value={skill.value} />
+            );
+          })}
         </Box>
-      </TabPanel>
-      <TabPanel value={value} index={3}>
-        <Typography variant="h4" component="h4">
-          Hi I am Full Stack MERN Developer
-        </Typography>
-        <Typography variant="p" component="p" mb={3}>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
-          maiores ea soluta consequuntur, pariatur itaque praesentium ipsum
-          ipsam id impedit.
-        </Typography>
-        <Typography variant="p" component="p" mb={3}>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
-          maiores ea soluta consequuntur, pariatur itaque praesentium ipsum
-          ipsam id impedit. Lorem ipsum dolor sit, amet consectetur adipisicing
-          elit. Eaque maiores ea soluta consequuntur
-        </Typography>
-        <Typography variant="p" component="p">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
-          maiores ea soluta consequuntur, pariatur itaque praesentium ipsum
-          ipsam id impedit. Lorem ipsum dolor sit, amet consectetur adipisicing
-          elit. Eaque maiores ea soluta consequuntur, pariatur itaque
-          praesentium ipsum ipsam id impedit.
-        </Typography>
       </TabPanel>
     </Box>
   );
 }
+
+const skills = [
+  {
+    title: 'React.js',
+    value: '98',
+  },
+  {
+    title: 'Next.js',
+    value: '95',
+  },
+  {
+    title: 'Node.js',
+    value: '90',
+  },
+  {
+    title: 'Express',
+    value: '85',
+  },
+];

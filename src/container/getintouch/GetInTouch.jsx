@@ -7,8 +7,7 @@ const GetInTouch = () => {
     <Box
       component="div"
       className="getintouch"
-      pt={23}
-      pb={20}
+      py={{ xs: '150px', sm: '200px' }}
       bgcolor="secondary.light"
     >
       <Container maxWidth="xl">
@@ -16,7 +15,9 @@ const GetInTouch = () => {
           <Grid
             item
             xs={12}
-            md={6}
+            sm={10}
+            md={8}
+            lg={6}
             bgcolor="secondary.contrastText"
             borderRadius={2}
             textAlign="center"
@@ -24,7 +25,12 @@ const GetInTouch = () => {
           >
             <Box component="div" py={5}>
               <SectionTitle subtitle="Get In Touch" />
-              <Typography variant="h4" mt={-3} mb={3}>
+              <Typography
+                variant="h4"
+                fontSize={{ xs: 25, md: 30 }}
+                mt={-3}
+                mb={3}
+              >
                 mamunben7@gmail.com
               </Typography>
               <Box
