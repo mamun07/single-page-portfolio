@@ -1,7 +1,7 @@
 import { Button } from '@mui/material';
 import React from 'react';
 
-const Buttons = ({ label, href, styled, mr }) => {
+const Buttons = ({ label, href, styled, mr, target }) => {
   return (
     <>
       <Button
@@ -18,6 +18,7 @@ const Buttons = ({ label, href, styled, mr }) => {
             color: 'primary.contrastText',
           },
         }}
+        target={target}
         href={href}
       >
         {label}

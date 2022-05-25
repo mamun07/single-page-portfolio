@@ -41,7 +41,7 @@ const Skills = () => {
                     color="primary.contrastText"
                     position="absolute"
                     textAlign="center"
-                    left={{ xs: 10, lg: -30 }}
+                    left={{ xs: 10, md: -30, lg: -50 }}
                     bottom={{ xs: 20, md: 30, lg: 40 }}
                     width={{ xs: 150, md: 200 }}
                     height={{ xs: 150, md: 200 }}
@@ -51,22 +51,31 @@ const Skills = () => {
                     justifyContent="center"
                     flexDirection="column"
                   >
-                    <Typography
-                      variant="h4"
-                      fontSize={{ xs: 20, md: 30, lg: 40 }}
-                    >
+                    <Typography variant="h4" fontSize={{ xs: 20, md: 30 }}>
                       3 <br />
                       Years Experience
                     </Typography>
-                    <Box component="div" mt={1}>
+                    <Box component="div" mt={{ xs: 1, md: 2 }}>
                       <Stack direction="row" spacing={0}>
-                        <IconButton color="inherit" aria-label="facebook">
+                        <IconButton
+                          color="inherit"
+                          aria-label="facebook"
+                          href="/"
+                        >
                           <i className="lab la-facebook-f"></i>
                         </IconButton>
-                        <IconButton color="inherit" aria-label="twitter">
+                        <IconButton
+                          color="inherit"
+                          aria-label="twitter"
+                          href="/"
+                        >
                           <i className="lab la-twitter"></i>
                         </IconButton>
-                        <IconButton color="inherit" aria-label="linkedin">
+                        <IconButton
+                          color="inherit"
+                          aria-label="linkedin"
+                          href="/"
+                        >
                           <i className="lab la-linkedin-in"></i>
                         </IconButton>
                       </Stack>

@@ -23,7 +23,7 @@ const GetInTouch = () => {
             textAlign="center"
             boxShadow={'0px 10px 80px 0px #0000004f'}
           >
-            <Box component="div" py={5}>
+            <Box component="div" py={5} className="getintouchin">
               <SectionTitle subtitle="Get In Touch" />
               <Typography
                 variant="h4"

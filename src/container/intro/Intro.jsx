@@ -41,7 +41,7 @@ const Intro = () => {
   ];
 
   return (
-    <Box component="div" id="intro" py={12}>
+    <Box className="introbg" component="div" id="intro" py={12}>
       <Container maxWidth="xl">
         <SectionTitle title="What I Do" subtitle="Service" />
       </Container>

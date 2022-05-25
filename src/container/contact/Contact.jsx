@@ -1,10 +1,32 @@
 import React from 'react';
-import { Box, Button, Container, Grid, Typography } from '@mui/material';
+import {
+  Box,
+  Button,
+  Container,
+  Dialog,
+  DialogContent,
+  DialogTitle,
+  Grid,
+  Slide,
+  TextField,
+  Typography,
+} from '@mui/material';
 import { SectionTitle } from '../../components/SectionTitle';
 
 import CountUp from 'react-countup';
+const Transition = React.forwardRef(function Transition(props, ref) {
+  return <Slide direction="up" ref={ref} {...props} />;
+});
 
 const Contact = () => {
+  const [open, setOpen] = React.useState(false);
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   return (
     <>
       <Box
@@ -35,7 +57,7 @@ const Contact = () => {
                 <SectionTitle title="Hire me for your awesome project" />
                 <Button
                   variant="contained"
-                  onClick={() => alert('Create a Contact form')}
+                  onClick={handleClickOpen}
                   sx={{
                     width: '200px',
                     height: '60px',
@@ -47,6 +69,112 @@ const Contact = () => {
                 >
                   Contact Me
                 </Button>
+                <Dialog
+                  open={open}
+                  TransitionComponent={Transition}
+                  keepMounted
+                  onClose={handleClose}
+                >
+                  <DialogContent>
+                    <DialogTitle textAlign="center" fontSize={30}>
+                      Let's Talk
+                    </DialogTitle>
+                    <Box component="div" width={{ xs: 300, md: 400 }}>
+                      <Box
+                        mb={3}
+                        component="div"
+                        display="flex"
+                        alignItems="flex-end"
+                        flexDirection="row"
+                      >
+                        <Box sx={{ color: 'action.active', mr: 1, my: 0.5 }}>
+                          <i className="las la-lg la-user"></i>
+                        </Box>
+                        <TextField
+                          type={'text'}
+                          label="Name"
+                          variant="standard"
+                          fullWidth
+                        />
+                        <Box sx={{ color: 'action.active', mr: 1, my: 0.5 }}>
+                          <i className="las la-lg la-phone"></i>
+                        </Box>
+                        <TextField
+                          type={'text'}
+                          label="Phone"
+                          variant="standard"
+                          fullWidth
+                        />
+                      </Box>
+                      <Box
+                        mb={3}
+                        component="div"
+                        sx={{ display: 'flex', alignItems: 'flex-end' }}
+                      >
+                        <Box sx={{ color: 'action.active', mr: 1, my: 0.5 }}>
+                          <i className="las la-lg la-envelope"></i>
+                        </Box>
+                        <TextField
+                          type={'email'}
+                          label="Email"
+                          variant="standard"
+                          fullWidth
+                        />
+                      </Box>
+                      <Box
+                        mb={3}
+                        component="div"
+                        sx={{ display: 'flex', alignItems: 'flex-end' }}
+                      >
+                        <Box sx={{ color: 'action.active', mr: 1, my: 0.5 }}>
+                          <i className="las la-lg la-list-ul"></i>
+                        </Box>
+                        <TextField
+                          type={'text'}
+                          label="Service"
+                          variant="standard"
+                          fullWidth
+                        />
+                      </Box>
+
+                      <Box
+                        mb={3}
+                        component="div"
+                        sx={{ display: 'flex', alignItems: 'flex-end' }}
+                      >
+                        <input type={'file'} />
+                      </Box>
+                      <Box
+                        mt={3}
+                        component="div"
+                        sx={{ display: 'flex', alignItems: 'flex-end' }}
+                      >
+                        <TextField
+                          label="Comments"
+                          multiline
+                          rows={4}
+                          fullWidth
+                        />
+                      </Box>
+                    </Box>
+                    <Box py={3}>
+                      <Button
+                        sx={{
+                          px: 5,
+                          '&:hover': {
+                            bgcolor: 'primary.main',
+                            color: 'primary.contrastText',
+                          },
+                        }}
+                        size="large"
+                        variant="outlined"
+                        onClick={handleClose}
+                      >
+                        Submit
+                      </Button>
+                    </Box>
+                  </DialogContent>
+                </Dialog>
               </Box>
             </Grid>
           </Grid>

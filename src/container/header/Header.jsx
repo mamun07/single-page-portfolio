@@ -22,7 +22,7 @@ const Header = () => {
           justifyContent={'flex-start'}
         >
           <Grid item lg={2} sm={4} xs={5}>
-            <Typography component="a" href="#banner">
+            <Typography component="a" href="/">
               <Typography
                 variant="h4"
                 fontWeight={900}

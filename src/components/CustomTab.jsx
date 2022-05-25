@@ -66,9 +66,10 @@ export default function CustomTab() {
         <Box component="div" mt={10}>
           <Buttons
             label="Download CV"
-            href="https://global.caremebd.com/"
+            href="https://drive.google.com/file/d/1NiGqn5vTJLFXzqdIHXU-KtcoWSK4TBZ4/view?usp=sharing"
             mr="20px"
             styled="contained"
+            target="_blank"
           />
           <Buttons label="Contact Me" href="#contact" styled="outlined" />
         </Box>

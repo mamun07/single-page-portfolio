@@ -9,7 +9,7 @@ const CustomMesonary = () => {
       spacing={{ xs: 1, sm: 2, md: 3 }}
     >
       {itemData.map((item, index) => (
-        <Box component="div" key={index}>
+        <Box component="div" key={index} zIndex={1}>
           <CardMedia
             image={item.img}
             alt={item.title}

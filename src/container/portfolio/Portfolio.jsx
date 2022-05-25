@@ -6,7 +6,13 @@ import CustomMesonary from '../../components/CustomMesonary';
 
 const Portfolio = () => {
   return (
-    <Box component="div" id="portfolio" py={12} bgcolor="secondary.light">
+    <Box
+      className="portfoliobg"
+      component="div"
+      id="portfolio"
+      py={12}
+      bgcolor="secondary.light"
+    >
       <Container maxWidth="xl">
         <SectionTitle title="Latest Work" subtitle="Portfolio" />
       </Container>

@@ -16,11 +16,16 @@ a {
 .swiper-slide-active .cardbg .textcolor p {
   color: #fff;
 }
+.introbg,
+.getintouch,
 .contactmainbg,
 .contactbg,
+.portfoliobg,
+.getintouchin,
 .skillbg {
   position: relative;
 }
+
 .skillbg::before {
   position: absolute;
   content: '';
@@ -37,7 +42,7 @@ a {
 .skillbg::after {
   position: absolute;
   content: '';
-  bottom: -50px;
+  top: 0px;
   left: 0;
   width: 400px;
   height: 300px;
@@ -46,6 +51,7 @@ a {
   background-position: left;
   background-size: 200px 200px;
 }
+
 .contactbg::before {
   position: absolute;
   content: '';
@@ -58,6 +64,48 @@ a {
   background-position: center;
   background-size: cover;
 }
+
+.introbg::before,
+.getintouch::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 90%;
+  background-image: url('/public/contactbg.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  opacity: 0.3;
+}
+.portfoliobg::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/public/contactbg.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 95%;
+  opacity: 0.3;
+}
+.getintouchin::after {
+  position: absolute;
+  content: '';
+  top: 40%;
+  left: 15%;
+  width: 100px;
+  height: 100px;
+  background-image: url('/public/fly.svg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 50px;
+  opacity: 0.3;
+}
+
 @media (max-width: 500px) {
   .contactbg::before {
     position: absolute;
@@ -72,6 +120,7 @@ a {
     background-size: 100%;
   }
 }
+
 .contactmainbg::before {
   position: absolute;
   content: '';
