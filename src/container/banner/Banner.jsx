@@ -63,7 +63,7 @@ const Banner = () => {
                     label="Hire Me"
                     href="#contact"
                     styled="contained"
-                    mr="40px"
+                    mr="20px"
                   />
                   <Buttons
                     label="Portfolio"

@@ -13,7 +13,7 @@ const Buttons = ({ label, href, styled, mr, target }) => {
         sx={{
           fontSize: 18,
           lineHeight: '18px',
-          minWidth: 170,
+          minWidth: 160,
           minHeight: 55,
           textTransform: 'none',
           mr: `${mr}`,
