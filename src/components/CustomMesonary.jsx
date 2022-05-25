@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, CardMedia } from '@mui/material';
+import { Box, CardMedia, Typography } from '@mui/material';
 import Masonry from '@mui/lab/Masonry';
 
 const CustomMesonary = () => {
@@ -9,17 +9,30 @@ const CustomMesonary = () => {
       spacing={{ xs: 1, sm: 2, md: 3 }}
     >
       {itemData.map((item, index) => (
-        <Box component="div" key={index} zIndex={1}>
-          <CardMedia
-            image={item.img}
-            alt={item.title}
-            component="img"
-            sx={{
-              borderRadius: 2,
-              display: 'block',
-              width: '100%',
-            }}
-          />
+        <Box
+          component="div"
+          key={index}
+          zIndex={1}
+          borderRadius={2}
+          boxShadow="0px 1px 20px -5px #0000004f"
+          overflow="hidden"
+        >
+          <Typography
+            variant="a"
+            component="a"
+            target="_blank"
+            href={item.link}
+          >
+            <CardMedia
+              image={item.img}
+              alt={item.title}
+              component="img"
+              sx={{
+                display: 'block',
+                width: '100%',
+              }}
+            />
+          </Typography>
         </Box>
       ))}
     </Masonry>
@@ -30,43 +43,53 @@ export default CustomMesonary;
 
 const itemData = [
   {
-    img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
-    title: 'Fern',
+    img: '/1.png',
+    title: 'Care Me Global',
+    link: 'https://global.caremebd.com/',
   },
   {
-    img: 'https://images.unsplash.com/photo-1627308595229-7830a5c91f9f',
-    title: 'Snacks',
+    img: '/2.png',
+    title: 'Care Me Global',
+    link: 'https://global.caremebd.com/',
   },
   {
-    img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
-    title: 'Mushrooms',
+    img: '/1.png',
+    title: 'Care Me Global',
+    link: 'https://global.caremebd.com/',
   },
   {
-    img: 'https://images.unsplash.com/photo-1529655683826-aba9b3e77383',
-    title: 'Tower',
+    img: '/2.png',
+    title: 'Care Me Global',
+    link: 'https://global.caremebd.com/',
   },
   {
-    img: 'https://images.unsplash.com/photo-1471357674240-e1a485acb3e1',
-    title: 'Sea star',
+    img: '/1.png',
+    title: 'Care Me Global',
+    link: 'https://global.caremebd.com/',
   },
   {
-    img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
-    title: 'Honey',
+    img: '/2.png',
+    title: 'Care Me Global',
+    link: 'https://global.caremebd.com/',
   },
   {
-    img: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6',
-    title: 'Basketball',
+    img: '/1.png',
+    title: 'Care Me Global',
+    link: 'https://global.caremebd.com/',
   },
   {
-    img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
-    title: 'Breakfast',
+    img: '/2.png',
+    title: 'Care Me Global',
+    link: 'https://global.caremebd.com/',
   },
   {
-    img: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6',
-    title: 'Basketball',
+    img: '/1.png',
+    title: 'Care Me Global',
+    link: 'https://global.caremebd.com/',
   },
   {
-    img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
-    title: 'Breakfast',
+    img: '/2.png',
+    title: 'Care Me Global',
+    link: 'https://global.caremebd.com/',
   },
 ];
