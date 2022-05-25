@@ -3,6 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { CssBaseline, ThemeProvider } from '@mui/material';
 
 import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/css';

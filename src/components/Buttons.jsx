@@ -1,10 +1,14 @@
-import { Button } from '@mui/material';
 import React from 'react';
+import { Button } from '@mui/material';
+import { toast } from 'react-toastify';
 
 const Buttons = ({ label, href, styled, mr, target }) => {
+  const notify = () =>
+    toast.success('Successfully loaded!', { theme: 'colored' });
   return (
     <>
       <Button
+        onClick={notify}
         variant={styled}
         sx={{
           fontSize: 18,
